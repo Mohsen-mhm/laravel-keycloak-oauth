@@ -18,4 +18,7 @@ All notable changes to `laravel-keycloak-oauth` will be documented in this file.
 - HasKeycloakAuth trait for User models
 - KeycloakService for handling authentication logic
 - Configurable routes and middleware
-- Support for Laravel 11+ and PHP 8.2+
+- Support for Laravel 9, 10, 11, and 12
+- Support for PHP 8.1+
+- Broad compatibility with Laravel Passport versions
+- Auto-discovery for Laravel packages

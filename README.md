@@ -15,10 +15,11 @@ A Laravel package for Keycloak OAuth2 authentication with JWT role extraction an
 
 ## Requirements
 
-- PHP 8.2+
-- Laravel 11.0+
+- PHP 8.1+
+- Laravel 9.0+ (supports Laravel 9, 10, 11, and 12)
 - Laravel Passport
 - Laravel Socialite
+- SocialiteProviders Keycloak
 
 ## Installation
 
@@ -28,16 +29,17 @@ Install the package via Composer:
 composer require mohsen-mhm/laravel-keycloak-oauth
 ```
 
-Add the SocialiteProviders Keycloak provider (if not already installed):
-
-```bash
-composer require socialiteproviders/keycloak
-```
+The package will automatically install the required dependencies including SocialiteProviders Keycloak.
 
 Install Laravel Passport if not already installed:
 
 ```bash
-composer require laravel/passport
+# For Laravel 11+
+composer require laravel/passport:^12.0
+php artisan passport:install
+
+# For Laravel 9-10
+composer require laravel/passport:^11.0
 php artisan passport:install
 ```
 
