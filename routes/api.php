@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Coinoment\LaravelKeycloakOauth\Controllers\KeycloakAuthController;
+use MohsenMhm\LaravelKeycloakOauth\Controllers\KeycloakAuthController;
 
 Route::get('/login', [KeycloakAuthController::class, 'redirectToKeycloak']);
 Route::get('/callback', [KeycloakAuthController::class, 'handleKeycloakCallback']);
