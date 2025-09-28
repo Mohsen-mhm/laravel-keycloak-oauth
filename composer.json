@@ -1,0 +1,51 @@
+{
+    "name": "mohsen-mhm/laravel-keycloak-oauth",
+    "description": "Laravel package for Keycloak OAuth2 authentication with JWT role extraction and user synchronization",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "keycloak",
+        "oauth2",
+        "authentication",
+        "jwt",
+        "sso"
+    ],
+    "authors": [
+        {
+            "name": "Mohsen",
+            "email": "mohsen.mhm23@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "illuminate/http": "^11.0",
+        "illuminate/contracts": "^11.0",
+        "laravel/socialite": "^5.0",
+        "laravel/passport": "^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MohsenMhm\\LaravelKeycloakOauth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MohsenMhm\\LaravelKeycloakOauth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MohsenMhm\\LaravelKeycloakOauth\\KeycloakOauthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
